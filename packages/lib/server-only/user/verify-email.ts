@@ -9,7 +9,7 @@ export type VerifyEmailProps = {
 };
 
 export const verifyEmail = async ({ token }: VerifyEmailProps) => {
-  const verificationToken = await prisma.verificationToken.findFirst({
+  const verificationToken = await prisma.VerificationToken.findFirst({
     include: {
       user: true,
     },
@@ -26,7 +26,7 @@ export const verifyEmail = async ({ token }: VerifyEmailProps) => {
   const valid = verificationToken.expires > new Date();
 
   if (!valid) {
-    const mostRecentToken = await prisma.verificationToken.findFirst({
+    const mostRecentToken = await prisma.VerificationToken.findFirst({
       where: {
         userId: verificationToken.userId,
       },
@@ -55,7 +55,7 @@ export const verifyEmail = async ({ token }: VerifyEmailProps) => {
         emailVerified: new Date(),
       },
     }),
-    prisma.verificationToken.deleteMany({
+    prisma.VerificationToken.deleteMany({
       where: {
         userId: verificationToken.userId,
       },

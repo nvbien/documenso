@@ -20,7 +20,7 @@ export const generateConfirmationToken = async ({ email }: { email: string }) =>
     throw new Error('User not found');
   }
 
-  const createdToken = await prisma.verificationToken.create({
+  const createdToken = await prisma.VerificationToken.create({
     data: {
       identifier: IDENTIFIER,
       token: token,
