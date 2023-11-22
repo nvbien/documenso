@@ -128,7 +128,7 @@ export const PricingTable = ({ className, ...props }: PricingTableProps) => {
           <div className="mt-8 flex w-full flex-col divide-y">
             <p className="text-foreground py-4 font-medium">
               {' '}
-              <a href="https://documenso.com/blog/early-adopters" target="_blank">
+              <a href="https://esign.ewu-web.de//blog/early-adopters" target="_blank">
                 The Early Adopter Deal:
               </a>
             </p>
@@ -138,7 +138,7 @@ export const PricingTable = ({ className, ...props }: PricingTableProps) => {
             <p className="text-foreground py-4">
               <strong>
                 {' '}
-                <a href="https://documenso.com/blog/early-adopters" target="_blank">
+                <a href="https://esign.ewu-web.de//blog/early-adopters" target="_blank">
                   Includes all upcoming features
                 </a>
               </strong>

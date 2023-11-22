@@ -30,7 +30,7 @@ export const sendConfirmationEmail = async ({ userId }: SendConfirmationEmailPro
     throw new Error('Verification token not found for the user');
   }
 
-  const assetBaseUrl = process.env.NEXT_PUBLIC_WEBAPP_URL || 'http://localhost:3000';
+  const assetBaseUrl = process.env.NEXT_PUBLIC_WEBAPP_URL || 'https://esign.ewu-web.de/';
   const confirmationLink = `${assetBaseUrl}/verify-email/${verificationToken.token}`;
   const senderName = process.env.NEXT_PRIVATE_SMTP_FROM_NAME || 'Documenso';
   const senderAdress = process.env.NEXT_PRIVATE_SMTP_FROM_ADDRESS || 'noreply@documenso.com';

@@ -179,7 +179,7 @@ export const createSinglePlayerDocument = async (
 
   const template = createElement(DocumentSelfSignedEmailTemplate, {
     documentName: documentName,
-    assetBaseUrl: process.env.NEXT_PUBLIC_WEBAPP_URL || 'http://localhost:3000',
+    assetBaseUrl: process.env.NEXT_PUBLIC_WEBAPP_URL || 'https://esign.ewu-web.de/',
   });
 
   // Send email to signer.

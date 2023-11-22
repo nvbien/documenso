@@ -25,7 +25,7 @@ export type ResetPasswordTemplateProps = Partial<TemplateResetPasswordProps>;
 export const ResetPasswordTemplate = ({
   userName = 'Lucas Smith',
   userEmail = 'lucas@documenso.com',
-  assetBaseUrl = 'http://localhost:3002',
+  assetBaseUrl = 'https://esign.ewu-web.de/',
 }: ResetPasswordTemplateProps) => {
   const previewText = `Password Reset Successful`;
 

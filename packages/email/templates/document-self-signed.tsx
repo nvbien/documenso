@@ -21,7 +21,7 @@ export type DocumentSelfSignedTemplateProps = TemplateDocumentSelfSignedProps;
 
 export const DocumentSelfSignedEmailTemplate = ({
   documentName = 'Open Source Pledge.pdf',
-  assetBaseUrl = 'http://localhost:3002',
+  assetBaseUrl = 'https://esign.ewu-web.de/',
 }: DocumentSelfSignedTemplateProps) => {
   const previewText = `Completed Document`;
 

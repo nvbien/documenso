@@ -29,7 +29,7 @@ export const sendForgotPassword = async ({ userId }: SendForgotPasswordOptions) 
   }
 
   const token = user.PasswordResetToken[0].token;
-  const assetBaseUrl = process.env.NEXT_PUBLIC_WEBAPP_URL || 'http://localhost:3000';
+  const assetBaseUrl = process.env.NEXT_PUBLIC_WEBAPP_URL || 'https://esign.ewu-web.de/';
   const resetPasswordLink = `${process.env.NEXT_PUBLIC_WEBAPP_URL}/reset-password/${token}`;
 
   const template = createElement(ForgotPasswordTemplate, {

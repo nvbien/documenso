@@ -57,7 +57,7 @@ export default async function handleFeatureFlagGet(req: Request) {
   const origin = req.headers.get('Origin');
 
   if (origin) {
-    if (origin.startsWith(process.env.NEXT_PUBLIC_WEBAPP_URL ?? 'http://localhost:3000')) {
+    if (origin.startsWith(process.env.NEXT_PUBLIC_WEBAPP_URL ?? 'https://esign.ewu-web.de/')) {
       res.headers.set('Access-Control-Allow-Origin', origin);
     }
 

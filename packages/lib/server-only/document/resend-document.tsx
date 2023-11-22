@@ -67,7 +67,7 @@ export const resendDocument = async ({ documentId, userId, recipients }: ResendD
         'document.name': document.title,
       };
 
-      const assetBaseUrl = process.env.NEXT_PUBLIC_WEBAPP_URL || 'http://localhost:3000';
+      const assetBaseUrl = process.env.NEXT_PUBLIC_WEBAPP_URL || 'https://esign.ewu-web.de/';
       const signDocumentLink = `${process.env.NEXT_PUBLIC_WEBAPP_URL}/sign/${recipient.token}`;
 
       const template = createElement(DocumentInviteEmailTemplate, {

@@ -37,7 +37,7 @@ export async function GET(_request: Request, { params: { slug } }: SharePageOpen
     ),
   ]);
 
-  const baseUrl = process.env.NEXT_PUBLIC_WEBAPP_URL || 'http://localhost:3000';
+  const baseUrl = process.env.NEXT_PUBLIC_WEBAPP_URL || 'https://esign.ewu-web.de/';
 
   const recipientOrSender: ShareHandlerAPIResponse = await fetch(
     new URL(`/api/share?slug=${slug}`, baseUrl),

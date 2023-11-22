@@ -21,7 +21,7 @@ export type DocumentPendingEmailTemplateProps = Partial<TemplateDocumentPendingP
 
 export const DocumentPendingEmailTemplate = ({
   documentName = 'Open Source Pledge.pdf',
-  assetBaseUrl = 'http://localhost:3002',
+  assetBaseUrl = 'https://esign.ewu-web.de/',
 }: DocumentPendingEmailTemplateProps) => {
   const previewText = `Pending Document`;
 

@@ -20,9 +20,9 @@ import { TemplateFooter } from '../template-components/template-footer';
 export type DocumentCompletedEmailTemplateProps = Partial<TemplateDocumentCompletedProps>;
 
 export const DocumentCompletedEmailTemplate = ({
-  downloadLink = 'https://documenso.com',
+  downloadLink = 'https://esign.ewu-web.de/',
   documentName = 'Open Source Pledge.pdf',
-  assetBaseUrl = 'http://localhost:3002',
+  assetBaseUrl = 'https://esign.ewu-web.de/',
 }: DocumentCompletedEmailTemplateProps) => {
   const previewText = `Completed Document`;
 

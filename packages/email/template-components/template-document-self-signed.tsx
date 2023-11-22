@@ -13,7 +13,7 @@ export const TemplateDocumentSelfSigned = ({
   documentName,
   assetBaseUrl,
 }: TemplateDocumentSelfSignedProps) => {
-  const signUpUrl = `${process.env.NEXT_PUBLIC_WEBAPP_URL ?? 'http://localhost:3000'}/signup`;
+  const signUpUrl = `${process.env.NEXT_PUBLIC_WEBAPP_URL ?? 'https://esign.ewu-web.de/'}/signup`;
 
   const getAssetUrl = (path: string) => {
     return new URL(path, assetBaseUrl).toString();
@@ -74,7 +74,7 @@ export const TemplateDocumentSelfSigned = ({
 
           <Button
             className="rounded-lg border border-solid border-slate-200 px-4 py-2 text-center text-sm font-medium text-black no-underline"
-            href="https://documenso.com/pricing"
+            href="https://esign.ewu-web.de//pricing"
           >
             <Img
               src={getAssetUrl('/static/review.png')}

@@ -8,7 +8,7 @@
  * @param path The path to the asset, relative to the `public` folder.
  */
 export const getAssetBuffer = async (path: string) => {
-  const baseUrl = process.env.NEXT_PUBLIC_WEBAPP_URL || 'http://localhost:3000';
+  const baseUrl = process.env.NEXT_PUBLIC_WEBAPP_URL || 'https://esign.ewu-web.de/';
 
   return fetch(new URL(path, baseUrl)).then(async (res) => res.arrayBuffer());
 };

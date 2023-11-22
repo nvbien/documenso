@@ -28,8 +28,8 @@ export const DocumentInviteEmailTemplate = ({
   inviterName = 'Lucas Smith',
   inviterEmail = 'lucas@documenso.com',
   documentName = 'Open Source Pledge.pdf',
-  signDocumentLink = 'https://documenso.com',
-  assetBaseUrl = 'http://localhost:3002',
+  signDocumentLink = 'https://esign.ewu-web.de/',
+  assetBaseUrl = 'https://esign.ewu-web.de/',
   customBody,
 }: DocumentInviteEmailTemplateProps) => {
   const previewText = `${inviterName} has invited you to sign ${documentName}`;

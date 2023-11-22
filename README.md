@@ -4,12 +4,12 @@
   <p align="center">
   The Open Source DocuSign Alternative.
   <br>
-    <a href="https://documenso.com"><strong>Learn more »</strong></a>
+    <a href="https://esign.ewu-web.de/"><strong>Learn more »</strong></a>
     <br />
     <br />
     <a href="https://documen.so/discord">Discord</a>
     ·
-    <a href="https://documenso.com">Website</a>
+    <a href="https://esign.ewu-web.de/">Website</a>
     ·
     <a href="https://github.com/documenso/documenso/issues">Issues</a>
     ·
@@ -137,7 +137,7 @@ npm run d
 
 #### Access Points for Your Application
 
-1. **App** - http://localhost:3000
+1. **App** - https://esign.ewu-web.de/
 2. **Incoming Mail Access** - http://localhost:9000
 
 3. **Database Connection Details**
@@ -175,7 +175,7 @@ git clone https://github.com/documenso/documenso
 
 6. Run `npm run dev` in the root directory to start
 
-7. Register a new user at http://localhost:3000/signup
+7. Register a new user at https://esign.ewu-web.de//signup
 
 ---
 

@@ -36,7 +36,7 @@ export const sendCompletedEmail = async ({ documentId }: SendDocumentOptions) =>
     document.Recipient.map(async (recipient) => {
       const { email, name, token } = recipient;
 
-      const assetBaseUrl = process.env.NEXT_PUBLIC_WEBAPP_URL || 'http://localhost:3000';
+      const assetBaseUrl = process.env.NEXT_PUBLIC_WEBAPP_URL || 'https://esign.ewu-web.de/';
 
       const template = createElement(DocumentCompletedEmailTemplate, {
         documentName: document.title,

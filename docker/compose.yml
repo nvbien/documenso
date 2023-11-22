@@ -24,9 +24,9 @@ services:
       - inbucket
     environment:
       - DATABASE_URL=postgres://documenso:password@database:5432/documenso
-      - NEXT_PUBLIC_WEBAPP_URL=http://localhost:3000
+      - NEXT_PUBLIC_WEBAPP_URL=https://esign.ewu-web.de/
       - NEXTAUTH_SECRET=my-super-secure-secret
-      - NEXTAUTH_URL=http://localhost:3000
+      - NEXTAUTH_URL=https://esign.ewu-web.de/
       - SENDGRID_API_KEY=
       - SMTP_MAIL_HOST=inbucket
       - SMTP_MAIL_PORT=2500

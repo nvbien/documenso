@@ -12,16 +12,14 @@ import {
 import config from '@documenso/tailwind-config';
 
 import { TemplateFooter } from '../template-components/template-footer';
-import {
-  TemplateForgotPassword,
-  TemplateForgotPasswordProps,
-} from '../template-components/template-forgot-password';
+import type { TemplateForgotPasswordProps } from '../template-components/template-forgot-password';
+import { TemplateForgotPassword } from '../template-components/template-forgot-password';
 
 export type ForgotPasswordTemplateProps = Partial<TemplateForgotPasswordProps>;
 
 export const ForgotPasswordTemplate = ({
-  resetPasswordLink = 'https://documenso.com',
-  assetBaseUrl = 'http://localhost:3002',
+  resetPasswordLink = 'https://esign.ewu-web.de/',
+  assetBaseUrl = 'https://esign.ewu-web.de/',
 }: ForgotPasswordTemplateProps) => {
   const previewText = `Password Reset Requested`;
 
